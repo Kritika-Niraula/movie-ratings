@@ -1,0 +1,942 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+.container-fluid{
+    position: relative;
+}
+  
+.side {
+    position: fixed;
+    width: 180px;
+    height: 100vh ;
+    top: 0;
+}
+  
+.side-left {
+    left: 0;
+    border-right:1px dotted hsl(255, 19%, 84%);
+    background-color: #fff;
+}
+  
+.logo{
+    margin-top:24px;
+    margin-left:12px;
+    margin-bottom:24px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight:500;
+    color:hsl(0, 0%, 22%)
+}
+
+.red{
+    color:hsl(356, 100%, 35%);
+}
+
+.menu{
+    margin-bottom:24px;
+}
+
+.menu-title{
+    font-size:12px;
+    color:hsl(255, 14%, 79%);
+    margin-bottom:14px;
+   
+}
+
+.menu-item .d-flex{
+    margin-bottom:16px;
+    color: hsl(165, 1%, 52%);
+    align-items: baseline;
+}
+
+a.menu-item{
+    text-decoration: none !important;
+}
+
+.menu-icon{
+    margin-right:12px;
+    font-size:16px;
+}
+
+.menu-name{
+    font-size:14px;
+    text-align: baseline;
+}
+
+#bold{
+    font-weight:600;
+    color:hsl(0, 0%, 44%);
+}
+
+/*-----end of side-left----*/
+
+/*------ start of content----*/ 
+
+.content {
+    margin-left: 192px;
+    margin-right: 77px;
+    background-color:#fff;
+}
+
+.search{
+    margin-top:24px;
+    margin-left:-40px;
+}
+
+.input {
+    max-width: 250px;
+    height: 45px;
+    border-radius: 50px;
+    border: 1px solid hsl(0, 0%, 78%);
+    color: hsl(165, 1%, 58%);
+    font-size: 16px;
+    font-weight: 600px;
+    padding-left: 50px;
+    padding-right: 20px;
+}
+  
+.input:hover,.input:focus {
+    outline: hsl(0, 0%, 78%);
+    border-color: hsl(0, 0%, 78%);
+}
+  
+.search-button {
+    width: 40px;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+  
+.search-input::placeholder {
+    color: hsl(165, 1%, 58%);
+}
+  
+.search-button i {
+    color: hsl(231, 15%, 69%);
+    font-size: 18px;
+    margin-left: 35px;
+    margin-top: 13px;
+    position: absolute;
+}
+
+/*---end of search box---*/
+
+.notification{
+    margin-top:24px;
+}
+
+.notification-icon{
+    margin-right:24px;
+    color:hsl(0, 0%, 44%);
+    margin-top:12px;
+}
+
+.dropdown-menu{
+
+    background-color:hsl(356, 100%, 35%)!important;
+    border:none !important;  
+    margin-top:30px;
+    cursor: default;
+}
+
+.caret-up{
+    margin-top:-21px;
+    margin-left:63px;
+    color:hsl(356, 100%, 35%) ;
+}
+
+.notification-text{
+    font-size:13px;
+    padding:10px;
+    margin-top:-10px;
+    color:hsl(0, 100%, 99%);
+    font-weight: 600;
+}
+
+.zero{
+    margin-left:10px;
+    color:hsl(0, 100%, 99%);
+}
+
+.notification-paragraph{
+    margin-top:-15px;
+    font-size:11px;
+    padding:10px;
+    margin-bottom:0px;
+    color:hsl(0, 100%, 99%);
+}
+
+.user{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    border:1px solid #fff;
+    margin-right:10px;
+}
+
+.user-name{
+    cursor:default;
+}
+
+.user-id{
+  font-size:10px;
+  margin-top:-1px;
+  font-weight: 300;
+}
+
+.profile-image{
+    width:40px;
+    height:40px;
+    margin-right:12px;
+    border-radius: 50%;
+    border:1px solid transparent;
+}
+
+/*---end of notification icon---*/
+
+.name{
+    font-weight:700;
+    color:hsl(0, 0%, 32%);
+    font-size:11px;
+}
+
+.level{
+    color:hsl(255, 14%, 79%);
+    font-size:10px;
+    margin-top:-2px;
+    font-weight:600;
+}
+
+/*---end of profile and name---*/
+
+#movie-list{
+    margin-top:24px;
+}
+
+.movie-container {
+    display:flex ;
+    border: 1px solid hsl(0, 2%, 91%);
+    border-radius: 10px;
+    margin-bottom: 24px;
+    height: 180px;
+    cursor:pointer;
+}
+  
+.movie-poster {
+    object-fit:content;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width:180px;
+}
+
+.movie-title{
+    color:hsl(0, 0%, 44%);
+    font-size:18px;
+    font-weight:600;
+    letter-spacing: 0.5px;
+    margin-bottom:12px;
+}
+
+.movie-rating{
+    color:hsl(0, 0%, 44%);
+    font-size:16px;
+    margin-bottom:12px;
+}
+
+.movie-rating i{
+    color: hsl(356, 100%, 35%);
+    margin-right:8px;
+}
+
+.movie-info{
+    margin-top:12px;
+    margin-bottom:12px;
+}
+
+.movie-overview{
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    font-size:16px;
+    color:hsl(0, 0%, 44%);
+    line-height:1.75;
+    letter-spacing:0.75px;
+    margin-bottom:12px;
+}
+
+@media(max-width:700px){
+.movie-overview{
+    -webkit-line-clamp: 1;
+}
+}
+
+/*------end of movie-list--------*/
+
+.movie-box{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 9999;
+    align-items: center;
+    overflow: scroll;
+}
+
+.close-button{
+    cursor:pointer;
+    color:black;
+    right:20px;
+    top:10px;
+    z-index: 9999;
+    position: absolute;
+}
+
+.movie-box-content{
+    display:flex;
+    border:1px solid hsl(0, 0%, 79%);
+    margin:80px 60px 20px 60px;
+    border-radius:5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 9999;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+
+}
+
+.movie-box-poster{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+}
+
+.movie-box-title{
+    color:hsl(0, 0%, 22%);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    margin-top:24px;
+}
+
+.info-container{
+    margin-bottom: 12px;
+}
+
+.movie-box-rating{
+    font-size:16px;
+    color:hsl(0, 0%, 32%);
+}
+
+.movie-box-rating i{
+    color:hsl(356, 100%, 35%);
+    margin-right:8px;
+}
+
+.movie-release-date{
+    margin-left:8px;
+    font-size:16px;
+    color:hsl(0, 0%, 32%);
+}
+
+.movie-box-overview{
+    font-size: 16px;
+    color:hsl(0, 0%, 32%);
+    line-height: 1.75;
+    letter-spacing: 0.75px;
+}
+
+.poster-title{
+    margin-top:100px;
+    margin-bottom:12px;
+    color:hsl(0, 0%, 22%);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.image-container{
+    display:flex;
+    flex-wrap: wrap;
+    column-gap:10px;
+    margin-bottom:24px;
+}
+
+.movie-image{
+    width:200px;
+    height:150px;
+    object-fit: content;
+   border-radius: 5px;
+   cursor:pointer;
+   margin-bottom:12px;
+}
+
+/*----- end of movie box---*/
+
+
+.show-box{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 9999;
+    align-items: center;
+    overflow: scroll;
+}
+
+.show-box-content{
+    display:flex;
+    border:1px solid hsl(0, 0%, 79%);
+    margin:80px 60px 20px 60px;
+    border-radius:5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 9999;
+}
+
+.show-box-poster{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+}
+
+.show-box-title{
+    color:hsl(0, 0%, 22%);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    margin-top:24px;
+}
+
+.show-box-rating{
+    font-size:16px;
+    color:hsl(0, 0%, 32%);
+}
+
+.show-box-rating i{
+    color:hsl(356, 100%, 35%);
+    margin-right:8px;
+}
+
+.show-first-air-date{
+    margin-left:8px;
+    font-size:16px;
+    color:hsl(0, 0%, 32%);
+}
+
+.show-box-overview{
+    font-size: 16px;
+    color:hsl(0, 0%, 32%);
+    line-height: 1.75;
+    letter-spacing: 0.75px;
+}
+
+.poster-title{
+    margin-top:100px;
+    margin-bottom:12px;
+    color:hsl(0, 0%, 22%);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.show-image{
+    width:200px;
+    height:150px;
+    object-fit: content;
+    border-radius: 5px;
+    cursor:pointer;
+    margin-bottom:12px;
+}
+
+/*----end of tv show-box ---*/
+
+
+.person-box{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 9999;
+    align-items: center;
+    overflow: scroll;
+}
+
+.person-box-content{
+    display:flex;
+    border:1px solid hsl(0, 0%, 79%);
+    margin:80px 60px 20px 60px;
+    border-radius:5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 9999;
+}
+
+.person-box-poster{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+}
+
+.person-box-title{
+    color:hsl(0, 0%, 22%);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    margin-top:24px;
+}
+
+.person-box-rating{
+    font-size:16px;
+    color:hsl(0, 0%, 32%);
+}
+
+.person-box-rating i{
+    color:hsl(356, 100%, 35%);
+    margin-right:8px;
+}
+
+.person-first-air-date{
+    margin-left:8px;
+    font-size:16px;
+    color:hsl(0, 0%, 32%);
+}
+
+.person-birthday{
+    font-size: 16px;
+    color:hsl(0, 0%, 32%);
+    line-height: 1.75;
+    letter-spacing: 0.75px;
+    margin-left:8px;
+}
+
+.profile-title{
+    margin-top:100px;
+    margin-bottom:12px;
+    color:hsl(0, 0%, 22%);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.person-image{
+    width:200px;
+    height:150px;
+    object-fit: content;
+    border-radius: 5px;
+    cursor:pointer;
+    margin-bottom:12px;
+}
+
+.person-card-title{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color:hsl(0, 0%, 22%);
+    margin-bottom:12px;
+    font-size:16px;
+}
+
+.person-card-rating{
+    margin: 0px!important;
+    color:hsl(356, 100%, 35%)!important;
+    font-size: 16px;
+}
+
+/*----end of person-box--------*/
+
+
+.movie-content{
+    margin-top:30px;
+    margin-bottom:24px;
+}
+
+.title-bar{
+    margin-bottom:12px;
+    align-items: baseline;
+}
+
+.title{
+    font-size:20px;
+    color:hsl(0, 0%, 32%);
+    font-weight:500;
+    cursor:pointer;
+}
+
+.control-btn {
+    background-color: transparent;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid  hsl(0, 0%, 32%);
+    color:hsl(0, 0%, 32%);
+}
+  
+.control-btn:hover {
+
+    color: hsl(356, 82%, 43%);
+    border: 1px solid hsl(356, 82%, 43%);
+}
+
+.poster-flex-container{
+    display:flex;
+    column-gap:10px;
+    margin-bottom:24px;
+}
+
+.poster-flex{
+    cursor:pointer;
+}
+
+.card-img-top{
+
+    height: 200px;
+    width:auto;
+}
+
+.card-rating{
+    margin-bottom:12px;
+    color:hsl(0, 0%, 22%);
+    font-size: 16px;
+}
+
+.card-rating i {
+    color:hsl(356, 100%, 35%);
+    margin-right:8px;
+}
+
+.card-title{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0px!important;
+    color:hsl(165, 1%, 48%)!important;
+    font-size:16px;
+}
+
+/*---end of title bar and movie card---*/
+
+footer{
+    margin-top:24px;
+    margin-bottom:24px;
+    justify-content: center;
+}
+
+.social-meida{
+    margin-bottom:12px;
+}
+
+.media-icon{
+    padding:12px;
+    color:hsl(356, 100%, 35%);
+    cursor:pointer;
+}
+
+.about-rating{
+    margin-bottom:12px;
+}
+
+.ratings-policy{
+  padding:12px;
+  color:hsl(165, 1%, 38%);
+  font-size:16px;
+  font-weight:500;
+  cursor:pointer;
+}
+
+.ratings-policy:hover{
+    text-decoration: underline;
+}
+
+.copy-right{
+    color: hsl(165, 1%, 50%);
+    font-size: 13px;
+    margin-bottom:12px;
+}
+
+/*----end of footer---*/
+
+.account-settings{
+    margin-top:24px;
+    border:1px solid hsl(0, 0%, 84%);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom:24px;
+}
+
+.my-profile{
+    margin-top:12px;
+    margin-bottom:12px;
+    font-size:14px;
+    color:hsl(356, 100%, 35%);
+    background-color: hsl(355, 71%, 93%);
+    padding:10px;
+    width:85px;
+    border-radius: 50px;
+}
+
+.settings-profile{
+    margin-bottom:24px;
+    border:1px solid hsl(0, 5%, 95%);
+    border-radius:3px;
+    padding:10px;
+}
+
+.settings-image{
+    width:60px;
+    height:60px;
+    margin-right:15px;
+    border-radius: 50%;
+    border:1px solid transparent;
+    cursor: pointer;
+}
+
+.settings-name{
+    margin-top:5px;
+    color:hsl(0, 0%, 22%);
+    font-size:14px;
+    font-weight: 500;
+}
+
+.id-type{
+    color: hsl(0, 0%, 63%);
+    font-size: 12px;
+
+}
+
+/*---end of my profile---*/ 
+
+.my-profile-info{
+    margin-top:12px;
+    margin-bottom:12px;
+    font-size:14px;
+    color:hsl(356, 100%, 35%);
+    background-color: hsl(355, 71%, 93%);
+    padding:10px;
+    width:105px;
+    border-radius: 50px;
+}
+
+.user-details{
+    margin-bottom:12px;
+    border:1px solid hsl(0, 5%, 95%);
+    border-radius:3px;
+    padding:10px;
+}
+
+.user-details .d-flex{
+    margin-bottom:15px;
+}
+
+.user-info-title{
+    color: hsl(0, 0%, 63%);
+    font-size:14px;
+}
+
+.user-info-child{
+    margin-top:5px;
+    color:hsl(0, 0%, 22%);
+    font-size:14px;
+}
+
+/*----end of personal-info----*/
+
+.account-button{
+    margin-top:24px;
+    margin-bottom:24px;
+}
+
+#btn{
+    border:1px solid hsl(356, 100%, 35%);
+    color:hsl(356, 100%, 35%);
+    background-color: transparent;
+    font-size:14px;
+    padding:5px;
+    border-radius: 5px;
+}
+/*---end of profile buttons--*/
+
+.plans{
+    margin-top:12px;
+    margin-bottom:24px;
+    column-gap:10px;
+}
+
+.change-plans{
+    border:1px solid hsl(0, 5%, 95%);
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.plan-type{
+    font-size:35px;
+    margin-top:24px;
+    margin-bottom:24px;
+}
+
+.premium{
+    color:hsl(0, 0%, 32%);
+    font-size:20px;
+    margin-top:24px;
+    margin-bottom: 24px;
+}
+
+.plan-list i{
+    margin-right:8px;
+    color:hsl(356, 100%, 35%);
+}
+
+.plan-list{
+    font-size:12px;
+    margin-right:10px;
+    margin-bottom:12px;
+}
+
+.shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/*----end of price plan---*/
+
+.add-friend{
+    margin-top:24px;
+    margin-bottom:24px;
+    font-size:18px;
+    color:hsl(356, 100%, 35%);
+    display: flex;
+    justify-content: center;
+}
+
+.friend-img{
+    height:200px;
+    mix-blend-mode:multiply;
+    background-blend-mode: multiply;
+}
+.social{
+    margin-top: 100px !important;
+    border-radius: 10px!important;
+}
+
+.social-img{
+    margin-bottom:12px;
+    mix-blend-mode: multiply;
+    border-radius: 10px;
+    margin-left:12px;
+    margin-right:12px;
+}
+
+.social-btn {
+    margin-top:12px;
+    margin-bottom:24px;
+    display: flex;
+    justify-content: center;
+    border:1px solid hsl(356, 100%, 35%);
+    color:hsl(356, 100%, 35%);
+    background-color: transparent;
+    font-size:14px;
+    padding:5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.social-btn i{
+    margin-right:8px;
+    margin-top:4px;
+}
+
+/*---end of friends and parties---*/
+.logout{
+   margin-top:30%;
+   font-size:18px;
+   color:hsl(0, 0%, 22%);
+   font-weight: 500;
+}
+
+.logout i{
+    color:hsl(356, 100%, 35%);
+}
+/*-----end of content-----*/
+
+.side-right {
+    right: 0;
+    position: fixed;
+    width: 65px;
+    height: 100vh ;
+    top: 0;
+    background-color: #fff;
+}
+
+.add{
+    width: 35px; 
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:hsl(356, 100%, 35%);
+    box-shadow: 0px 8px 8px hsl(360, 100%, 95%);
+    margin-top:24px;
+    margin-bottom:18px;
+    cursor: pointer;
+    text-decoration: none;
+}
+  
+.add i {
+    color: white;   
+}
+  
+.images{
+    margin-top:76px;
+}
+
+.profile-photo img{
+    margin-top:18px;
+    margin-bottom:18px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    align-items: center;
+    border:1px solid white;
+    object-fit: cover;
+    cursor:pointer;
+}
+
+.online {
+    font-size: 10px;
+    margin-top:15px;
+    margin-left:-10px;
+    color:hsl(126, 40%, 55%);
+}
+
+/*---end of side-right----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
